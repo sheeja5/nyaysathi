@@ -12,7 +12,7 @@ def generate_complaint_letter(client, details):
     
     # Assuming Google Generative AI client has a similar interface
     document = language_v1.Document(content=prompt, type_=language_v1.Document.Type.PLAIN_TEXT)
-    response = client.analyze_sentiment(document=document)
+    response = client.generate_text(document=document)
     # Here, you'd use the appropriate API call for text generation.
     # The line below is a placeholder for the actual generative AI function.
     generated_text = response.document_sentiment  # Modify as per actual API response structure
