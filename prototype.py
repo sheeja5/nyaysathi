@@ -26,7 +26,7 @@ st.subheader("Enter the details of your complaint:")
 details = st.text_area("Describe the incident here (include what happened, when, where, and who was involved):")
 
 if st.button("Generate Complaint Letter"):
-    if complaint_details:
+    if details:
         with st.spinner('Generating your complaint letter...'):
           letter = generate_complaint_letter(details)
           st.subheader("Generated Complaint Letter:")
