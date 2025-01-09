@@ -17,7 +17,7 @@ def generate_complaint_letter(details):
     # The line below is a placeholder for the actual generative AI function.
    # Modify as per actual API response structure
     
-    return generated_text
+    return generated_text.text
 
 # Streamlit UI
 st.title("AI Police Complaint Letter Generator (Google Generative AI)")
