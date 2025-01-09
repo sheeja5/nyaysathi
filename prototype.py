@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 # Initialize Google Cloud Language client
 # Function to generate a complaint letter using Google Generative AI
-genai.configure(api_key="YOUR_API_KEY")
+genai.configure(api_key="AIzaSyDNcp_JDchji_PfU6mKwjCz2SxGBj0a4Ow")
 def generate_complaint_letter(details):
     prompt = f"Write a formal police complaint letter based on the following details:\n{details}"
     
@@ -10,7 +10,7 @@ def generate_complaint_letter(details):
     
      
    
-    model = genai.GenerativeModel("AIzaSyDNcp_JDchji_PfU6mKwjCz2SxGBj0a4Ow")
+    model = genai.GenerativeModel("gemini-1.5-flash-8b")
     generated_text = model.generate_content(prompt)
 
     # Here, you'd use the appropriate API call for text generation.
