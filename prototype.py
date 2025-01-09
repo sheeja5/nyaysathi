@@ -61,5 +61,6 @@ if st.button("Generate Complaint Letter"):
           letter = generate_complaint_letter(details)
           st.subheader("Generated Complaint Letter:")
           st.text_area("Complaint Letter", value=letter, height=300)
+          st.warning("Please review and edit the generated complaint letter carefully before using it. Ensure all details are accurate and complete.")
     else:
         st.warning("Please enter the details of your complaint.")
