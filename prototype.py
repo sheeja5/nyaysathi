@@ -5,14 +5,14 @@ import google.generativeai as genai
 genai.configure(api_key="AIzaSyDNcp_JDchji_PfU6mKwjCz2SxGBj0a4Ow")
 def generate_complaint_letter(details):
     prompt = f"Write a formal police complaint letter based on the following details and use this format to write[Your Name]
-[Your Address]
-[City, State, PIN Code]
-[Email Address]
-[Phone Number]
+               [Your Address]
+               [City, State, PIN Code]
+               [Email Address]
+               [Phone Number]
 
-[Date]
+                [Date]
 
-The Station House Officer
+               The Station House Officer
 [Name of Police Station]
 [Station Address]
 [City, State, PIN Code]
