@@ -4,7 +4,7 @@ import google.generativeai as genai
 # Function to generate a complaint letter using Google Generative AI
 genai.configure(api_key="AIzaSyDNcp_JDchji_PfU6mKwjCz2SxGBj0a4Ow")
 def generate_complaint_letter(details):
-    prompt = f"Write a formal police complaint letter based on the following details and use this format to write[Your Name]
+    prompt = f"""Write a formal police complaint letter based on the following details and use this format to write[Your Name]
                [Your Address]
                [City, State, PIN Code]
                [Email Address]
@@ -13,29 +13,28 @@ def generate_complaint_letter(details):
                 [Date]
 
                The Station House Officer
-[Name of Police Station]
-[Station Address]
-[City, State, PIN Code]
+               [Name of Police Station]
+               [Station Address]
+               [City, State, PIN Code]
 
-Subject: Complaint Regarding [brief description of the incident]
+               Subject: Complaint Regarding [brief description of the incident]
 
-Respected Sir/Madam,
+               Respected Sir/Madam,
 
-I, [Your Name], residing at [Your Address], wish to bring to your attention an incident that occurred on [Date] at approximately [Time] at [Location]. [Provide a detailed description of the incident, including any individuals involved and witnesses, if applicable.]
+                I, [Your Name], residing at [Your Address], wish to bring to your attention an incident that occurred on [Date] at approximately [Time] at [Location]. [Provide a detailed description of the incident, including any individuals involved and witnesses, if applicable.]
 
-This incident has caused me significant distress, and I request that you register my complaint and initiate an investigation into the matter. I am willing to provide any further information or assistance required.
+               This incident has caused me significant distress, and I request that you register my complaint and initiate an investigation into the matter. I am willing to provide any further information or assistance required.
 
-Thank you for your attention to this matter.
+               Thank you for your attention to this matter.
 
-Yours sincerely,
+               Yours sincerely,
 
-[Your Signature]
+               [Your Signature]
 
-[Your Name]
+               [Your Name]
 
-Enclosures:
-1. [List of documents, if any]
-:\n{details}"
+
+               :\n{details}"""
     
     # Assuming Google Generative AI client has a similar interface
     
