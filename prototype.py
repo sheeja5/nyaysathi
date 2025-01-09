@@ -1,6 +1,6 @@
 import streamlit as st
 from google.cloud import language_v1
-import google.generativeai as genai
+
 # Initialize Google Cloud Language client
 def get_generative_ai_client():
     client = language_v1.LanguageServiceClient()
