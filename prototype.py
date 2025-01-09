@@ -31,6 +31,6 @@ if st.button("Generate Complaint Letter"):
         with st.spinner('Generating your complaint letter...'):
             letter = generate_complaint_letter(client, complaint_details)
             st.subheader("Generated Complaint Letter:")
-            st.text_area("Complaint Letter", letter, height=300)
+            st.text_area("Complaint Letter", value=letter, height=300)
     else:
         st.warning("Please enter the details of your complaint.")
