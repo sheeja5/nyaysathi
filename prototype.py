@@ -5,7 +5,6 @@ import google.generativeai as genai
 def get_generative_ai_client():
     client = language_v1.LanguageServiceClient()
     return client
-genai.configure(api_key="AIzaSyDNcp_JDchji_PfU6mKwjCz2SxGBj0a4Ow")
 # Function to generate a complaint letter using Google Generative AI
 def generate_complaint_letter(client, details):
     prompt = f"Write a formal police complaint letter based on the following details:\n{details}"
