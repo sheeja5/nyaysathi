@@ -65,7 +65,7 @@ if st.button("Generate Complaint Letter"):
           st.download_button(
                 label="Download Complaint Letter",
                 data=letter,
-                file_name = "complaint_letter",
+                file_name = "complaint_letter.txt",
                 mime="text/plain"
           )    
     else:
