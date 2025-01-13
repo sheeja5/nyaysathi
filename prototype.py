@@ -62,7 +62,7 @@ if st.button("Generate Complaint Letter"):
           st.subheader("Generated Complaint Letter:")
           st.text_area("Complaint Letter", value=letter, height=300)
           st.warning("Please review and edit the generated complaint letter carefully before using it. Ensure all details are accurate and complete.This can make mistakes")
-          file_name = st.text_input("Enter the file name for download", "complaint_letter")
+          file_name = st.text_input("Enter the file name for download")
           file = (file_name +".txt")  
           st.download_button(
                 label="Download Complaint Letter",
